@@ -2,16 +2,17 @@
     
     display: flex;
     align-items: center;
-    border-width: 1px;
+    border-width: 0.5px;
     border-style: solid;
     justify-content: space-between;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    height: 8rem;
 
 }
 
 .contenedorizquierdo{
-    height: 5rem;
     display: flex;
+    height: 8rem;
 }
 
 .logo{
@@ -20,35 +21,50 @@
     margin-bottom: 0;
 }
 
-.contenedormedio{
+.contenedorMedio{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    position: relative;
-    box-shadow: 0 1px 2px 0 rgba(160, 160, 160, 0.902);
-    border-width: 1px;
+    border-width: 0.5px;
     border-style: solid;
-    border-radius: 15px;
-
+    border-radius: 25px;
+    border-color:   #cccccc;
+    height: 3.5rem;
+    align-items: stretch;
+    width: 35rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .inputmedio{
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-    width: 18rem;
-    border-radius: 15px;
+    border-radius: 25px;
     outline: none;
+    border: 2px solid pink;
+    border:none;
 }
 
 .contenedorMedioBotones{
-    position: absolute;
-    padding:1rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 25rem;    
+}
+
+.contenedorMedioBotones button{
+    cursor: pointer;
+    height: 100%; 
+    border-radius: 35px;
+    margin: 0;
+    flex: 1;
+    border:none;
 }
 
 .lupaBusqueda{
     border-radius: 50%;
     padding: 0.5rem;
-    background-color: yellowgreen;
+    background-color: yellow;
+    width: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;justify-content: center;
 }
 .contenedorderecho{
     display: flex;

@@ -13,23 +13,26 @@ const NavBar = () => {
             </div>
 
             {/* Parte media */}
-            <div className='contenedormedio'>
-                
+            <div className='contenedorMedio'>
+
                 <input
                 className='inputmedio'
                 type='search'
-                placeholder=''
+                placeholder='Dónde'
                 />
 
                 <div className='contenedorMedioBotones'>
-                    <button>Lugar</button>
-                    <button>Tiempo</button>
-                    <button>Grupo talla</button>
-                </div>
+
+                    <button>Llegada</button>
+                    <button>Salida</button>
+                    <button>Quién cuantos</button>
                 
-                <div className='lupaBusqueda'>
-                <FiSearch />
+                    <div className='lupaBusqueda'>
+                    <FiSearch />
+                    </div>
                 </div>
+
+                
 
             </div>
 
