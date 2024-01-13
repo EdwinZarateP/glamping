@@ -3,14 +3,21 @@ import '../estilos/Navbar.css'
 import { BiWorld } from "react-icons/bi";
 import { FiMenu, FiSearch } from "react-icons/fi";
 import { AiOutlineUser } from "react-icons/ai";
+import { GiCampingTent } from "react-icons/gi";
 
 const NavBar = () => {
     return (
         <div className='barNav'>
             {/* Parte Izquierda */}
             <div className="contenedorizquierdo">
-                <img src={logo} className="logo"/>
-                
+                <div className="logoPrincipal">
+                    <img src={logo} />
+                </div>
+
+                <div className="logoTienda">
+                    <GiCampingTent />
+                </div>
+
             </div>
 
             {/* Parte media */}
@@ -39,7 +46,7 @@ const NavBar = () => {
 
             {/* Parte derecha */}
             <div className='contenedorderecho'>
-                <p>Ofrece tu glamping</p>
+                <p>Ofrece tu </p>
                 <BiWorld />
                 <div className='contenedorMenu'>
                 <FiMenu />
