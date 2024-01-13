@@ -10,6 +10,7 @@ const NavBar = () => {
             {/* Parte Izquierda */}
             <div className="contenedorizquierdo">
                 <img src={logo} className="logo"/>
+                
             </div>
 
             {/* Parte media */}
@@ -22,15 +23,15 @@ const NavBar = () => {
                 />
 
                 <div className='contenedorMedioBotones'>
-
-                    <button>Llegada</button>
-                    <button>Salida</button>
+                 
+                    <button>Tiempo</button>
+                 
                     <button>Quién cuantos</button>
-                
-                    <div className='lupaBusqueda'>
+                </div>
+
+                <div className='lupaBusqueda'>
                     <FiSearch />
                     </div>
-                </div>
 
                 
 
@@ -38,12 +39,11 @@ const NavBar = () => {
 
             {/* Parte derecha */}
             <div className='contenedorderecho'>
-                <p>Alquila un glamping</p>
+                <p>Ofrece tu glamping</p>
                 <BiWorld />
-
-                <div>
-                    <FiMenu />
-                    <AiOutlineUser />
+                <div className='contenedorMenu'>
+                <FiMenu />
+                <AiOutlineUser/>
                 </div>
             </div>
         </div>
