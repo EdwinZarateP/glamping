@@ -1,5 +1,6 @@
 import './App.css'
 import NavBar from './componentes/Navbar.tsx'
+import Filtros from './componentes/Filtros.tsx'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       {/* NavBar */}
       <NavBar />
       {/* Filtros */}
+      <Filtros/>
       {/* glampings */}
       {/* Footers */}
 

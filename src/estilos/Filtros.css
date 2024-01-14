@@ -1,0 +1,52 @@
+.contenedorFiltros{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    Justify-content:space-between;
+    
+}
+
+.filtro {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+    Flex-direction:column-reverse;
+  }
+  
+  .filtro span {
+    white-space: nowrap; 
+    color: gray;
+    font-size: 13px;
+    font-family:Arial;
+    cursor: pointer;
+    padding-bottom: 15px;
+  }
+  
+  .filtro span:hover {
+    color: rgb(98, 98, 98);
+    border-bottom: 2px solid rgb(215, 215, 215);
+  }
+
+  .icono {
+    font-size: 25px; 
+    color: gray;
+    cursor: pointer;
+  }
+
+  .icono:hover {
+    color: rgb(98, 98, 98);
+  }
+
+  .multifiltro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border: solid;
+    border-radius: 30px;
+    border-color:   #cccccc;
+    border-width: 0.5px;
+    height: 4rem;
+    font-size: 25px; 
+  }
