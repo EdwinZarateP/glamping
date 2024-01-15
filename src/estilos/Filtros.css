@@ -1,22 +1,22 @@
-.contenedorFiltros{
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    Justify-content:space-between;
-    height: 4.5rem; 
-    padding-left:10px;
-    padding-right:10px;    
+.contenedorFiltros {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  justify-content: space-between;
+  height: 4.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .contenedorFiltrosLista {
-  display: flex;  
+  display: flex;
   justify-content: space-between;
-  overflow-x: auto; /* Permite desplazarse horizontalmente cuando el contenido excede el ancho */
-  scrollbar-width: thin; /* Para navegadores Firefox */
-  scrollbar-color: transparent transparent; /* Para navegadores Firefox */
-  min-width: calc(100% - 120px); /* Resta el ancho del multifiltro */
-  max-width: calc(100% - 120px); /* Resta el ancho del multifiltro */
-  padding-top:10px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  min-width: calc(100% - 120px);
+  max-width: calc(100% - 120px);
+  padding-top: 10px;
 }
 
 .contenedorFiltrosLista::-webkit-scrollbar {
@@ -25,55 +25,72 @@
 
 .contenedorFiltrosLista::-webkit-scrollbar-thumb {
   background-color: transparent;
-  background-color: rebeccapurple;
 }
 
-.filtro {  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left:10px;
-    margin-right:10px;
-    Flex-direction:column-reverse;
-  
-  }
-  
-  .filtro span {
-    white-space: nowrap; 
-    color: gray;
-    font-size: 13px;
-    font-family:Arial;
-    cursor: pointer;
-    padding-bottom: 10px;
-  }
-  
-  .filtro span:hover {
-    color: rgb(98, 98, 98);
-    border-bottom: 1px solid rgb(215, 215, 215);
+.filtro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-direction: column-reverse;
+  color: gray;
+}
+
+.filtro span {
+  white-space: nowrap;
+  color: gray;
+  font-size: 13px;
+  font-family: Arial;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.filtro:hover span {
+  color: black;
+  border-bottom: 1px solid rgb(215, 215, 215);
+  font-weight: bold;
+}
+
+.icono {
+  font-size: 25px;
+  color: gray;
+  cursor: pointer;
+}
+
+.filtro:hover .icono {
+  color: black;
+}
+
+.icono:hover {
+  color: black;
+}
+
+.multifiltro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  border: solid;
+  border-radius: 30px;
+  border-color: #cccccc;
+  border-width: 0.5px;
+  height: 3.5rem;
+  font-size: 25px;
+  margin-left: 10px;
+  padding-top: 0;
+}
+
+
+@media (max-width: 744px) {
+  .multifiltro {
+      display: none;
   }
 
-  .icono {
-    font-size: 25px; 
-    color: gray;
-    cursor: pointer;
+  .contenedorFiltrosLista {
+    min-width: 100%;
   }
+}
 
-  .icono:hover {
-    color: rgb(98, 98, 98);
-  }
-
-  .multifiltro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 80px;
-    border: solid;
-    border-radius: 30px;
-    border-color:   #cccccc;
-    border-width: 0.5px;
-    height: 3.5rem; 
-    font-size: 25px;  
-    margin-left: 10px;
-    padding-top:0;
   
-  }
+

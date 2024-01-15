@@ -3,8 +3,8 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    border-width: 0.5px;
-    border-style: solid;
+    border: none;
+    border-bottom:0.5px solid #cccccc;
     justify-content: space-between;
     height: 5rem;
     padding-right: 10px;
@@ -137,6 +137,7 @@
     font-size: 13.33px;
     font-weight: bold;
     font-family:Arial;
+    padding-left: 15px;
 }
 
 
@@ -170,9 +171,13 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.multifiltroNav {
+    display: none;
+  }
+
 /* para dispositivos moviles */
 
-@media (max-width: 650px) {
+@media (max-width: 744px) {
     .barNav {
         height: 5rem; 
     }
@@ -204,6 +209,21 @@
     }
     .contenedorderecho{
         display: none;
+    }
+
+    .multifiltroNav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 80px;
+        border: solid;
+        border-radius: 30px;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        height: 3.5rem;
+        font-size: 25px;
+        margin-left: 10px;
+        padding-top: 0;
     }
 
     

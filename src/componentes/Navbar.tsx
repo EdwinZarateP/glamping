@@ -4,6 +4,7 @@ import { BiWorld } from "react-icons/bi";
 import { FiMenu, FiSearch } from "react-icons/fi";
 import { AiOutlineUser } from "react-icons/ai";
 import { GiCampingTent } from "react-icons/gi";
+import { TbFilterEdit } from "react-icons/tb";
 
 const NavBar = () => {
     return (
@@ -40,19 +41,24 @@ const NavBar = () => {
                     <FiSearch />
                     </div>
 
-                
-
             </div>
 
             {/* Parte derecha */}
             <div className='contenedorderecho'>
-                <p>Ofrece tu </p>
+                <p>Ofrece tu Glamping </p>
                 <BiWorld />
                 <div className='contenedorMenu'>
                 <FiMenu />
                 <AiOutlineUser/>
                 </div>
+                
             </div>
+
+            {/* Parte derecha multifiltro */}
+            <div className='multifiltroNav'>
+                <TbFilterEdit />
+            </div>
+
         </div>
     );
 };
