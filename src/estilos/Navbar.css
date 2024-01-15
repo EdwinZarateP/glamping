@@ -43,7 +43,7 @@
     border-radius: 25px;
     border-color:   #cccccc;
     height: 3.5rem;
-    min-width: 5rem;
+    min-width: 18rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);   
 }
 
@@ -118,6 +118,7 @@
     min-width: 40px;
     max-height: 2.5rem;
     min-height: 2.5rem;
+    
 }
 
 .lupaBusqueda:hover {
@@ -183,8 +184,7 @@
     }
 
     .contenedorizquierdo{
-        max-width:300px;
-        min-width: 15px;
+        min-width: 40px;
     }
 
     /*Desaparecemos el logo original y dejamos el logo basico*/
@@ -198,13 +198,15 @@
         align-items: center;
         justify-content: center;
         font-size: 50px;
-        min-width: 20px;
+        min-width: 40px;
         padding: 0 10px 0 10px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .contenedorMedio {
-        /* height: 1.75rem;  */
         width: 90%;
+        margin-left: 10px;
         
     }
     .contenedorderecho{
@@ -222,7 +224,7 @@
         border-width: 0.5px;
         height: 3.5rem;
         font-size: 25px;
-        margin-left: 10px;
+        margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
         padding-top: 0;
     }
 
