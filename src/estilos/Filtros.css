@@ -3,6 +3,8 @@
     align-items: center;
     max-width: 100%;
     Justify-content:space-between;
+    height: 4.5rem; 
+    
 }
 
 .contenedorFiltrosLista {
@@ -13,24 +15,26 @@
   scrollbar-color: transparent transparent; /* Para navegadores Firefox */
   min-width: calc(100% - 80px); /* Resta el ancho del multifiltro */
   max-width: calc(100% - 80px); /* Resta el ancho del multifiltro */
-  padding:0;
+  padding-top:10px;
 }
 
-
 .contenedorFiltrosLista::-webkit-scrollbar {
-  width: 0px; /* Ancho de la barra de desplazamiento para navegadores WebKit (Chrome, Safari, Edge) */
+  height: 0px;
 }
 
 .contenedorFiltrosLista::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Color del pulgar de la barra de desplazamiento */
+  background-color: transparent;
+  background-color: rebeccapurple;
 }
 
 .filtro {  
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:10px;
+    margin-left:10px;
+    margin-right:10px;
     Flex-direction:column-reverse;
+  
   }
   
   .filtro span {
@@ -66,7 +70,9 @@
     border-radius: 30px;
     border-color:   #cccccc;
     border-width: 0.5px;
-    height: 3rem;
+    height: 3.5rem; 
     font-size: 25px;  
     margin-left: 10px;
+    margin-top: 10px;
+    padding-top:0;
   }
