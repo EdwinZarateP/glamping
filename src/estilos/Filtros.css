@@ -1,14 +1,24 @@
 .contenedorFiltros{
     display: flex;
     overflow-x: auto; /* Permite desplazarse horizontalmente cuando el contenido excede el ancho */
-    width: 100%;
+    max-width: 100%;
     align-items: center;
     Justify-content:space-between;
-    
+    scrollbar-width: thin; /* Para navegadores Firefox */
+    scrollbar-color: transparent transparent; /* Para navegadores Firefox */
 }
 
-.filtros-wrapper {
+.contenedorFiltros::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento para navegadores WebKit (Chrome, Safari, Edge) */
+}
+
+.contenedorFiltros::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color del pulgar de la barra de desplazamiento */
+}
+
+.contenedorFiltrosLista {
   display: flex;
+  max-width: 90%;
 }
 
 .filtro {  

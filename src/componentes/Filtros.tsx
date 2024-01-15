@@ -20,7 +20,7 @@ const Filtros = () => {
 
     return (
         <div className='contenedorFiltros'>
-            <div className='filtros-wrapper'>
+            <div className='contenedorFiltrosLista'>
                 {iconos.map((elemento, index) => (
                     <div key={index} className="filtro">
                         <span>{elemento.titulo}</span>
