@@ -48,7 +48,7 @@
 
 .filtro:hover span {
   color: black;
-  border-bottom: 1px solid rgb(215, 215, 215);
+  border-bottom: 1px solid black;
   font-weight: bold;
 }
 
@@ -83,6 +83,10 @@
 
 
 @media (max-width: 744px) {
+  
+  .contenedorFiltros {
+    border-bottom:0.5px solid #cccccc;
+  }
   .multifiltro {
       display: none;
   }

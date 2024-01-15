@@ -182,6 +182,7 @@
 @media (max-width: 744px) {
     .barNav {
         height: 5rem; 
+        border: none;
     }
 
     .contenedorizquierdo{
