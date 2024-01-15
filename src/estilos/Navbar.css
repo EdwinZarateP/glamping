@@ -43,7 +43,8 @@
     border-radius: 25px;
     border-color:   #cccccc;
     height: 3.5rem;
-    min-width: 18rem;
+    min-width: 12rem;
+    max-width: 28rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);   
 }
 
@@ -54,9 +55,9 @@
     padding: 25px;
     height: 3.5rem;
     font-weight: bold;
-    color: black;
-    max-width:8.5rem;   
-    min-width:5.5rem;
+    color: black;  
+    min-width:8rem;
+    max-width: 28rem;
 }
 
 .inputmedio:hover {
@@ -198,17 +199,27 @@
         align-items: center;
         justify-content: center;
         font-size: 50px;
-        min-width: 40px;
+        min-width: 50px;
         padding: 0 10px 0 10px;
         margin-right: 10px;
         margin-left: 10px;
     }
 
     .contenedorMedio {
-        width: 90%;
         margin-left: 10px;
-        
+        min-width:12rem;
+        width:100%;
+        justify-content: space-between;
     }
+
+    .inputmedio{ 
+        min-width:8rem;
+    }
+
+    .contenedorMedioBotones{
+        display: none;
+    }
+
     .contenedorderecho{
         display: none;
     }
@@ -217,7 +228,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 80px;
+        min-width: 40px;
         border: solid;
         border-radius: 30px;
         border-color: #cccccc;
