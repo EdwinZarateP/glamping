@@ -1,24 +1,28 @@
 .contenedorFiltros{
     display: flex;
-    overflow-x: auto; /* Permite desplazarse horizontalmente cuando el contenido excede el ancho */
-    max-width: 100%;
     align-items: center;
+    max-width: 100%;
     Justify-content:space-between;
-    scrollbar-width: thin; /* Para navegadores Firefox */
-    scrollbar-color: transparent transparent; /* Para navegadores Firefox */
-}
-
-.contenedorFiltros::-webkit-scrollbar {
-  width: 12px; /* Ancho de la barra de desplazamiento para navegadores WebKit (Chrome, Safari, Edge) */
-}
-
-.contenedorFiltros::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Color del pulgar de la barra de desplazamiento */
 }
 
 .contenedorFiltrosLista {
-  display: flex;
-  max-width: 90%;
+  display: flex;  
+  justify-content: space-between;
+  overflow-x: auto; /* Permite desplazarse horizontalmente cuando el contenido excede el ancho */
+  scrollbar-width: thin; /* Para navegadores Firefox */
+  scrollbar-color: transparent transparent; /* Para navegadores Firefox */
+  min-width: calc(100% - 80px); /* Resta el ancho del multifiltro */
+  max-width: calc(100% - 80px); /* Resta el ancho del multifiltro */
+  padding:0;
+}
+
+
+.contenedorFiltrosLista::-webkit-scrollbar {
+  width: 0px; /* Ancho de la barra de desplazamiento para navegadores WebKit (Chrome, Safari, Edge) */
+}
+
+.contenedorFiltrosLista::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color del pulgar de la barra de desplazamiento */
 }
 
 .filtro {  
@@ -35,7 +39,7 @@
     font-size: 13px;
     font-family:Arial;
     cursor: pointer;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
   
   .filtro span:hover {
@@ -57,11 +61,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    min-width: 80px;
     border: solid;
     border-radius: 30px;
     border-color:   #cccccc;
     border-width: 0.5px;
-    height: 4rem;
-    font-size: 25px; 
+    height: 3rem;
+    font-size: 25px;  
+    margin-left: 10px;
   }
