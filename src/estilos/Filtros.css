@@ -4,7 +4,8 @@
     max-width: 100%;
     Justify-content:space-between;
     height: 4.5rem; 
-    
+    padding-left:10px;
+    padding-right:10px;    
 }
 
 .contenedorFiltrosLista {
@@ -13,8 +14,8 @@
   overflow-x: auto; /* Permite desplazarse horizontalmente cuando el contenido excede el ancho */
   scrollbar-width: thin; /* Para navegadores Firefox */
   scrollbar-color: transparent transparent; /* Para navegadores Firefox */
-  min-width: calc(100% - 80px); /* Resta el ancho del multifiltro */
-  max-width: calc(100% - 80px); /* Resta el ancho del multifiltro */
+  min-width: calc(100% - 120px); /* Resta el ancho del multifiltro */
+  max-width: calc(100% - 120px); /* Resta el ancho del multifiltro */
   padding-top:10px;
 }
 
@@ -73,6 +74,6 @@
     height: 3.5rem; 
     font-size: 25px;  
     margin-left: 10px;
-    margin-top: 10px;
     padding-top:0;
+  
   }
