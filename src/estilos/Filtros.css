@@ -6,6 +6,8 @@
   height: 4.5rem;
   padding-left: 10px;
   padding-right: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .contenedorFiltrosLista {
@@ -77,7 +79,7 @@
   border-width: 0.5px;
   height: 3.5rem;
   font-size: 25px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   padding-top: 0;
 }
 
@@ -86,6 +88,8 @@
   
   .contenedorFiltros {
     border-bottom:0.5px solid #cccccc;
+    margin-left: 0;
+    margin-right: 0;
   }
   .multifiltro {
       display: none;

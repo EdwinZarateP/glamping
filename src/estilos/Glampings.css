@@ -1,0 +1,43 @@
+.contenedorPrincipalImagenes{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.contenedorImagenesDetalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjeta-glamping {
+    width: 280px;
+    margin: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.glamping-imagen {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.glamping-info {
+    text-align: left;
+}
+
+
+@media (max-width: 550px) {
+
+    .tarjeta-glamping {
+        width: 400px;
+    }
+
+    .glamping-imagen {    
+        height: 300px;
+        min-width: 350px;
+        max-width: 500px;
+    }
+
+}

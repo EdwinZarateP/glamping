@@ -2,20 +2,25 @@ import '../estilos/Filtros.css';
 import { FaHouseFloodWater, FaUmbrellaBeach, FaTemperatureArrowUp, FaTemperatureArrowDown } from "react-icons/fa6";
 import { BsTreeFill } from "react-icons/bs";
 import { PiMountainsBold } from "react-icons/pi";
-import { GiDesert } from "react-icons/gi";
-import { MdCabin } from "react-icons/md";
+import { GiDesert, GiTreehouse, GiHiking } from "react-icons/gi";
+import { MdCabin, MdOutlinePets } from "react-icons/md";
 import { TbFilterEdit } from "react-icons/tb";
+import { FaCaravan } from "react-icons/fa";
 
 const Filtros = () => {
     const iconos = [
-        {titulo: "Sol", icono: <FaUmbrellaBeach />},
-        {titulo: "Clima calido", icono: <FaTemperatureArrowUp />},
+        {titulo: "Playa", icono: <FaUmbrellaBeach />},
+        {titulo: "Tropical", icono: <FaTemperatureArrowUp />},
         {titulo: "Clima frio", icono: <FaTemperatureArrowDown />},
         {titulo: "Naturaleza", icono: <BsTreeFill />},
         {titulo: "En la montaña", icono: <PiMountainsBold />},
         {titulo: "Desierto", icono: <GiDesert />},
+        {titulo: "Pet Friend", icono: <MdOutlinePets />},
         {titulo: "Flotantes", icono: <FaHouseFloodWater />},
-        {titulo: "Cabañas", icono: <MdCabin />}
+        {titulo: "Cabañas", icono: <MdCabin />},
+        {titulo: "Casa del árbol", icono: <GiTreehouse />},
+        {titulo: "Caminata", icono: <GiHiking />},
+        {titulo: "Remolques", icono: <FaCaravan />}       
     ];
 
     return (
