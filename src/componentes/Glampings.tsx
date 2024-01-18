@@ -1,9 +1,9 @@
 import '../estilos/Glampings.css';
-import { PiHeartHalfDuotone } from "react-icons/pi";
 import g1 from '../imagenes/g1.jpg';
 import g2 from '../imagenes/g2.jpg';
 import g3 from '../imagenes/g3.jpg';
 import g4 from '../imagenes/g4.jpg';
+import { RiHeart3Line } from "react-icons/ri";
 
 const Glampings = () => {
     const fotosEinfo = [
@@ -28,7 +28,7 @@ const Glampings = () => {
                         <img className="glamping-imagen" src={elemento.imagen} alt={elemento.titulo} />
                         
                         <div className="icono-corazon">
-                            <PiHeartHalfDuotone />
+                            <RiHeart3Line />
                         </div>
                         
                         <div className="glamping-info">
