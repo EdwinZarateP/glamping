@@ -1,6 +1,7 @@
 .contenedorPrincipalImagenes{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
 }
 
 .contenedorImagenesDetalle {
@@ -10,27 +11,67 @@
 }
 
 .tarjeta-glamping {
-    width: 280px;
-    margin: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    position: relative; /* Agrega esta línea para que los elementos absolutos se posicionen en relación con este contenedor */
+    width: 300px;
+    margin: 10px 10px 20px 10px;
+    align-items: center;
 }
 
 .glamping-imagen {
-    width: 280px;
+    display: flex;
+    width: 300px;
     height: 280px;
     object-fit: cover;
     border-radius: 15px;
     margin-bottom: 10px;
+    position: relative; /* Añade esta línea para que los elementos absolutos se posicionen en relación con este contenedor */
+}
+
+.icono-corazon {
+    position: absolute;
+    font-size: 28px;
+    top: 15px; /* Ajusta la distancia desde la parte superior */
+    right: 15px; /* Ajusta la distancia desde la parte derecha */
+    z-index: 1; /* Ajusta el valor z para que esté por encima de otros elementos en la misma posición */
+    color:black;
+    box-shadow: 0px 1px 1px 0px white;
 }
 
 .glamping-info {
     text-align: left;
+    font-family: 'Arial';
+    font-size: 13px;
+    min-width: 350px;
+    max-width: 500px;
 }
 
+.glamping-info h3 {
+    color:rgb(84, 84, 84)
+}
+
+.glamping-info p {
+    padding: 4px 0 0 0;
+    color:gray
+}
+
+.glamping-info h4 {
+    padding-top: 4px;
+    color:rgb(84, 84, 84)
+}
+
+.precio{
+    display: flex;
+}
+
+.precio p{
+    margin-left: 5px;
+}
 
 @media (max-width: 550px) {
 
     .tarjeta-glamping {
+        display: flex;
+        flex-direction: column;
         width: 400px;
     }
 
@@ -38,6 +79,11 @@
         height: 300px;
         min-width: 350px;
         max-width: 500px;
+    }
+
+    .glamping-info {
+        min-width: 350px;
+        max-width: 500px; 
     }
 
 }
