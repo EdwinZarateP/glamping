@@ -89,6 +89,8 @@
     border-bottom:0.5px solid #cccccc;
     margin-left: 0;
     margin-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   .multifiltro {
       display: none;
