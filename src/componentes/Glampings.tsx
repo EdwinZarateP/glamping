@@ -3,7 +3,9 @@ import g1 from '../imagenes/g1.jpg';
 import g2 from '../imagenes/g2.jpg';
 import g3 from '../imagenes/g3.jpg';
 import g4 from '../imagenes/g4.jpg';
-import { RiHeart3Line } from "react-icons/ri";
+import { FaHeart } from "react-icons/fa";
+import { useState } from 'react';
+import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Glampings = () => {
     const fotosEinfo = [
@@ -20,16 +22,45 @@ const Glampings = () => {
         
     ];
 
+    const [corazonRojo, setCorazonRojo] = useState(Array(fotosEinfo.length).fill(false));
+
+    const handleCorazonClick = (index:number) => {
+        const newCorazonRojo = [...corazonRojo];
+        newCorazonRojo[index] = !newCorazonRojo[index];
+        setCorazonRojo(newCorazonRojo);
+    };
+
     return (
         <div className='contenedorPrincipalImagenes'>
+    
             <div className='contenedorImagenesDetalle'>
+
                 {fotosEinfo.map((elemento, index) => (
+
                     <div key={index} className="tarjeta-glamping">
-                        <img className="glamping-imagen" src={elemento.imagen} alt={elemento.titulo} />
+
+                        <div className="glamping-imagen">
+                            
+                            <img className="glamping-imagen-foto" src={elemento.imagen} alt={elemento.titulo} />
                         
-                        <div className="icono-corazon">
-                            <RiHeart3Line />
+                            {/* Flecha para desplazar a izquierda iconos */}
+                            <div className="flecha-izquierda-foto" >
+                                <MdOutlineKeyboardArrowLeft />
+                            </div>
+
+                            <div
+                                className={`icono-corazon ${corazonRojo[index] ? 'rojo' : ''}`}
+                                onClick={() => handleCorazonClick(index)}
+                            >
+                                <FaHeart />
+                            </div>
+
+                            {/* Flecha para desplazar a derecha fotos */}
+                            <div className="flecha-derecha-foto" >
+                                        <MdOutlineKeyboardArrowRight />
+                            </div>
                         </div>
+                         
                         
                         <div className="glamping-info">
                             <h3>{elemento.titulo}</h3>

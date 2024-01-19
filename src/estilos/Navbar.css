@@ -7,6 +7,7 @@
     border-bottom:0.5px solid #cccccc;
     justify-content: space-between;
     height: 5rem;
+    margin: 0 70px 0 70px;
 }
 
 .contenedorizquierdo{
@@ -25,8 +26,8 @@
 }
 
 .logoPrincipal img {
-    width: 100%; /* Ajusta el tamaño de la imagen dentro del logoPrincipal */
-    height: 100%; /* Mantiene la proporción del logo al cambiar el ancho */
+    width: 100%; 
+    height: 100%;
 }
 
 .logoTienda{
@@ -40,7 +41,7 @@
     border-radius: 25px;
     border-color:   #cccccc;
     height: 3.5rem;
-    min-width: 12rem;
+    min-width: 18rem;
     max-width: 28rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);   
 }
@@ -52,10 +53,9 @@
     padding: 25px;
     height: 3.5rem;
     font-weight: bold;
-    color: black;  
-    min-width:8rem;
+    color: #000000;  
+    min-width:4rem;
     max-width: 28rem;
-    background-color:white;
 }
 
 .inputmedio:hover {
@@ -65,7 +65,7 @@
 .contenedorMedioBotones{
     display: flex;
     justify-content: space-evenly;
-    width: 25rem;  
+    min-width: 8rem;  
     height: 3.5rem;  
 }
 
@@ -86,7 +86,6 @@
     font-weight: bold;
     color:gray;
     transition: background-color 0.2s;
-    
 }
 
 .contenedorMedioBotones button:before {
@@ -95,8 +94,8 @@
     top: 25%;
     bottom: 25%;
     left: 0;
-    width: 0.3px; /* ajusta el ancho de la línea según tu diseño */
-    background-color: gray; /* ajusta el color de la línea según tu diseño */
+    width: 0.3px; 
+    background-color: gray; 
   }
 
 .contenedorMedioBotones button:hover {
@@ -181,6 +180,7 @@
     .barNav {
         height: 5rem; 
         border: none;
+        margin: 0 10px 0 10px;
     }
 
     .contenedorizquierdo{

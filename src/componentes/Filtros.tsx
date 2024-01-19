@@ -6,6 +6,8 @@ import { GiDesert, GiTreehouse, GiHiking } from "react-icons/gi";
 import { MdCabin, MdOutlinePets } from "react-icons/md";
 import { TbFilterEdit } from "react-icons/tb";
 import { FaCaravan } from "react-icons/fa";
+import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { useRef } from 'react';
 
 const Filtros = () => {
     const iconos = [
@@ -20,21 +22,63 @@ const Filtros = () => {
         {titulo: "Cabañas", icono: <MdCabin />},
         {titulo: "Casa del árbol", icono: <GiTreehouse />},
         {titulo: "Caminata", icono: <GiHiking />},
+        {titulo: "Remolques", icono: <FaCaravan />},
+        {titulo: "Desierto", icono: <GiDesert />},
+        {titulo: "Pet Friend", icono: <MdOutlinePets />},
+        {titulo: "Flotantes", icono: <FaHouseFloodWater />},
+        {titulo: "Cabañas", icono: <MdCabin />},
+        {titulo: "Casa del árbol", icono: <GiTreehouse />},
+        {titulo: "Caminata", icono: <GiHiking />},
         {titulo: "Remolques", icono: <FaCaravan />}       
     ];
 
+        const contenedorFiltrosListaRef = useRef<HTMLDivElement | null>(null);
+    
+        const handleScrollLeft = () => {
+            if (contenedorFiltrosListaRef.current) {
+                (contenedorFiltrosListaRef.current as HTMLDivElement).scrollBy({
+                    left: -100,
+                    behavior: 'smooth',
+                });
+            }
+        };
+    
+        const handleScrollRight = () => {
+            if (contenedorFiltrosListaRef.current) {
+                (contenedorFiltrosListaRef.current as HTMLDivElement).scrollBy({
+                    left: 100,
+                    behavior: 'smooth',
+                });
+            }
+        };
+    
+
+
     return (
         <div className='contenedorFiltros'>
-            <div className='contenedorFiltrosLista'>
+            <div ref={contenedorFiltrosListaRef}  className='contenedorFiltrosLista'>
+            
+                {/* Flecha para desplazar a izquierda iconos */}
+                <div className="flecha-izquierda" onClick={handleScrollLeft}>
+                    <MdOutlineKeyboardArrowLeft />
+                </div>
+    
+
                 {iconos.map((elemento, index) => (
                     <div key={index} className="filtro">
                         <span>{elemento.titulo}</span>
                         <div className="icono">{elemento.icono}</div>
                     </div>
                 ))}
+
+                {/* Flecha para desplazar a izquierda iconos */}
+                <div className="flecha-derecha" onClick={handleScrollRight}>
+                    <MdOutlineKeyboardArrowRight />
+                </div>
+
             </div>
             <div className='multifiltro'>
-                <TbFilterEdit />
+                <TbFilterEdit />       
             </div>
         </div>
     );

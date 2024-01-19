@@ -1,7 +1,6 @@
 .contenedorPrincipalImagenes{
     margin-left: 50px;
     margin-right: 50px;
-    
 }
 
 .contenedorImagenesDetalle {
@@ -10,8 +9,9 @@
     justify-content: space-around;
 }
 
+
 .tarjeta-glamping {
-    position: relative; /* Agrega esta línea para que los elementos absolutos se posicionen en relación con este contenedor */
+    position: relative;
     width: 300px;
     margin: 10px 10px 20px 10px;
     align-items: center;
@@ -19,12 +19,52 @@
 
 .glamping-imagen {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.glamping-imagen-foto{
     width: 300px;
     height: 280px;
     object-fit: cover;
     border-radius: 15px;
     margin-bottom: 10px;
-    position: relative; /* Añade esta línea para que los elementos absolutos se posicionen en relación con este contenedor */
+}
+
+.flecha-izquierda-foto{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    top: 50% - 10px;
+    left: 10px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.flecha-derecha-foto {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    top: 50% - 10px;
+    right: 10px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.flecha-izquierda-foto:hover,
+.flecha-derecha-foto:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
 }
 
 .icono-corazon {
@@ -32,22 +72,29 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 32px;
-    height: 32px;
-    font-size: 28px;
-    top: 15px; /* Ajusta la distancia desde la parte superior */
-    right: 15px; /* Ajusta la distancia desde la parte derecha */
-    z-index: 1; /* Ajusta el valor z para que esté por encima de otros elementos en la misma posición */
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
     background-color: white;
     border-radius: 50%;
 }
+
+.icono-corazon.rojo {
+    color: red;
+}
+
+.icono-corazon:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
+}   
 
 .glamping-info {
     text-align: left;
     font-family: 'Arial';
     font-size: 13px;
     min-width: 350px;
-    max-width: 500px;
 }
 
 .glamping-info h3 {
@@ -72,23 +119,39 @@
     margin-left: 5px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 744px) {
 
     .tarjeta-glamping {
         display: flex;
         flex-direction: column;
-        width: 400px;
+        width: 400px;    
     }
 
-    .glamping-imagen {    
-        height: 300px;
+
+    .glamping-imagen-foto{
         min-width: 350px;
-        max-width: 500px;
+        height: 350px;
+    }
+
+    .flecha-izquierda-foto{
+        left: 10px;
+    }
+    
+    .flecha-derecha-foto {
+        right: 10px;
+    }
+    
+    .icono-corazon {
+        top: 15px;
+        right: 15px;
+        width: 32px;
+        height:32px;
+        font-size: 20px;
     }
 
     .glamping-info {
         min-width: 350px;
-        max-width: 500px; 
+        max-width: 350px;
     }
 
 }
