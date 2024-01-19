@@ -90,15 +90,64 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
 }   
 
+.puntos-navegacion{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 85%;
+    right: 40%;
+    font-size: 17px;
+    
+}
+
+.puntos-navegacion > *{
+    margin:2px;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+}
+
+
 .glamping-info {
     text-align: left;
     font-family: 'Arial';
     font-size: 13px;
-    min-width: 350px;
+    min-width: 100%;
 }
 
 .glamping-info h3 {
-    color:rgb(84, 84, 84)
+    color:black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.glamping-info-superior{
+display: flex;
+width: 100%;
+justify-content:space-between;
+align-items: center;
+}
+
+.glamping-info-superior > :nth-child(2){
+    margin: 0 0 0 10px;
+    }
+
+.glamping-info-calificacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 10px;
+}
+
+.glamping-info-calificacion > :nth-child(2){
+    margin: 0 0 0 5px;
+    color:black;
+    font-size: 14px;
 }
 
 .glamping-info p {
@@ -134,11 +183,11 @@
     }
 
     .flecha-izquierda-foto{
-        left: 10px;
+        display: none;
     }
     
     .flecha-derecha-foto {
-        right: 10px;
+        display: none;
     }
     
     .icono-corazon {

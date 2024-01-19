@@ -3,9 +3,10 @@ import g1 from '../imagenes/g1.jpg';
 import g2 from '../imagenes/g2.jpg';
 import g3 from '../imagenes/g3.jpg';
 import g4 from '../imagenes/g4.jpg';
-import { FaHeart } from "react-icons/fa";
 import { useState } from 'react';
+import { FaHeart, FaStar } from "react-icons/fa";
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { GoDot } from "react-icons/go";
 
 const Glampings = () => {
     const fotosEinfo = [
@@ -59,11 +60,26 @@ const Glampings = () => {
                             <div className="flecha-derecha-foto" >
                                         <MdOutlineKeyboardArrowRight />
                             </div>
+
+                            {/* puntos de navegcion */}
+                            <div className='puntos-navegacion'>
+                                <GoDot />
+                                <GoDot />
+                                <GoDot />
+                                <GoDot />
+                            </div>
                         </div>
                          
                         
                         <div className="glamping-info">
-                            <h3>{elemento.titulo}</h3>
+                            <div className='glamping-info-superior'>
+                                <h3>{elemento.titulo}</h3>
+                                <div className='glamping-info-calificacion'>
+                                    <FaStar />
+                                    <p>4.5</p>
+                                </div>
+                            </div>
+
                             <p>A {elemento.distancia} km de distancia</p>
                             <p>{elemento.fecha}</p>
                             <div className='precio'>
