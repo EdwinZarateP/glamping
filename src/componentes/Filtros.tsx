@@ -53,7 +53,6 @@ const Filtros = () => {
         };
     
 
-
     return (
         <div className='contenedorFiltros'>
             <div ref={contenedorFiltrosListaRef}  className='contenedorFiltrosLista'>

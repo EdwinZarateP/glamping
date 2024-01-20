@@ -1,14 +1,18 @@
-.barNav{
-    
+.barNav {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     border: none;
-    border-bottom:0.5px solid #cccccc;
+    border-bottom: 0.5px solid #cccccc;
     justify-content: space-between;
     height: 5rem;
-    margin: 0 70px 0 70px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;    
 }
+
 
 .contenedorizquierdo{
     display: flex;
@@ -17,6 +21,7 @@
     height: 5rem;
     max-width:300px;
     min-width: 160px;
+    margin-left: 70px;
 }
 
 .logoPrincipal{
@@ -41,9 +46,10 @@
     border-radius: 25px;
     border-color:   #cccccc;
     height: 3.5rem;
+    width: 42rem;
     min-width: 18rem;
-    max-width: 28rem;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);   
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05); 
+    justify-content: space-between;  
 }
 
 .inputmedio{
@@ -54,8 +60,10 @@
     height: 3.5rem;
     font-weight: bold;
     color: #000000;  
+    width: 34rem;
     min-width:4rem;
-    max-width: 28rem;
+    
+    
 }
 
 .inputmedio:hover {
@@ -65,7 +73,8 @@
 .contenedorMedioBotones{
     display: flex;
     justify-content: space-evenly;
-    min-width: 8rem;  
+    width: 28rem;  
+    min-width: 8rem;
     height: 3.5rem;  
 }
 
@@ -86,6 +95,7 @@
     font-weight: bold;
     color:gray;
     transition: background-color 0.2s;
+    max-width: 24rem; 
 }
 
 .contenedorMedioBotones button:before {
@@ -125,11 +135,11 @@
 }
 
 .contenedorderecho{
+    margin-right: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 3.5rem;
-    padding-right: 20px;
 }
 
 .contenedorderecho p{
@@ -185,6 +195,7 @@
 
     .contenedorizquierdo{
         min-width: 40px;
+        margin-left: 0;
     }
 
     /*Desaparecemos el logo original y dejamos el logo basico*/
@@ -234,8 +245,7 @@
         border-width: 0.5px;
         height: 3.5rem;
         font-size: 25px;
-        margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
-        padding-top: 0;
+        margin: 0 10px 0 10px;
     }
 
     

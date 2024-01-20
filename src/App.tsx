@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './componentes/Navbar.tsx'
 import Filtros from './componentes/Filtros.tsx'
 import Glampings from './componentes/Glampings.tsx'
+import Footers from './componentes/Footers.tsx'
 
 function App() {
 
@@ -11,12 +12,16 @@ function App() {
       
       {/* NavBar */}
       <NavBar />
+
       {/* Filtros */}
       <Filtros/>
-      {/* glampings */}
 
+      {/* glampings */}
       <Glampings/>
+      
       {/* Footers */}
+
+      <Footers/>
 
     </div>
   )

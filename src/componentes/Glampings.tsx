@@ -19,6 +19,11 @@ const Glampings = () => {
         { titulo: "Terrojo", imagen: g4, costo:180000, fecha:'21 enero', distancia:400 },
         { titulo: "Constelacion Glamping", imagen: g1, costo:120000, fecha:'13 enero', distancia:400 },
         { titulo: "Bajo el Xielo", imagen: g2, costo:200000, fecha:'11 enero', distancia:400 },
+        { titulo: "Paihuen", imagen: g3, costo:305000, fecha:'21 enero', distancia:400 },
+        { titulo: "Paihuen", imagen: g3, costo:180000, fecha:'14 enero', distancia:400 },
+        { titulo: "Terrojo", imagen: g4, costo:180000, fecha:'21 enero', distancia:400 },
+        { titulo: "Constelacion Glamping", imagen: g1, costo:120000, fecha:'13 enero', distancia:400 },
+        { titulo: "Bajo el Xielo", imagen: g2, costo:200000, fecha:'11 enero', distancia:400 },
         { titulo: "Paihuen", imagen: g3, costo:305000, fecha:'21 enero', distancia:400 }
         
     ];

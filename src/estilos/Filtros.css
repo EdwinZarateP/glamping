@@ -1,12 +1,15 @@
 .contenedorFiltros {
   display: flex;
   align-items: center;
-  max-width: 100%;
   justify-content: space-between;
   height: 4.5rem;
-  padding-left: 80px;
-  padding-right: 80px;
+  width: 100%;
+  background-color: white;
   box-shadow: 0px 10px 10px 0px  rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: calc(5rem + 0.5px);
+  left: 0;
+  z-index: 1;
 }
 
 .contenedorFiltrosLista {
@@ -15,11 +18,10 @@
   overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
-  min-width: calc(100% - 120px);
-  max-width: calc(100% - 120px);
   padding-top: 10px;
-  position: relative;
-  
+  position: relative;  
+  margin-left: 70px;
+  margin-right: 25px;
 }
 
 .contenedorFiltrosLista::-webkit-scrollbar {
@@ -107,6 +109,7 @@
   height: 3.5rem;
   font-size: 25px;
   padding-top: 0;
+  margin-right: 70px;
 }
 
 
@@ -116,10 +119,6 @@
   
   .contenedorFiltros {
     border-bottom:0.5px solid #cccccc;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 12px;
-    padding-right: 12px;
   }
   .multifiltro {
       display: none;
@@ -127,7 +126,10 @@
 
   .contenedorFiltrosLista {
     min-width: 100%;
+    margin-left: 0;
   }
+
+
 
   .flecha-izquierda,
   .flecha-derecha {
