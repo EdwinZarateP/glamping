@@ -2,6 +2,7 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 11rem;
+    background-color: aqua;
 }
 
 .contenedorImagenesDetalle {
@@ -16,6 +17,7 @@
     width: 300px;
     margin: 10px 10px 20px 10px;
     align-items: center;
+    background-color: antiquewhite;
 }
 
 .glamping-imagen {
@@ -175,7 +177,7 @@ align-items: center;
     .tarjeta-glamping {
         display: flex;
         flex-direction: column;
-        width: 400px;    
+        width: 350px;    
     }
 
 
