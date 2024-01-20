@@ -18,12 +18,11 @@
   justify-content: space-between;
   overflow-x: auto;
   scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+  scrollbar-color: transparent;
   padding-top: 10px;
   position: relative;  
   margin-left: 70px;
   margin-right: 25px;
-
 }
 
 .contenedorFiltrosLista::-webkit-scrollbar {
