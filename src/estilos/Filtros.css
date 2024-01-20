@@ -10,6 +10,7 @@
   top: calc(5rem + 0.5px);
   left: 0;
   z-index: 1;
+  margin-right: 25px;
 }
 
 .contenedorFiltrosLista {
@@ -22,6 +23,7 @@
   position: relative;  
   margin-left: 70px;
   margin-right: 25px;
+
 }
 
 .contenedorFiltrosLista::-webkit-scrollbar {
@@ -119,6 +121,7 @@
   
   .contenedorFiltros {
     border-bottom:0.5px solid #cccccc;
+    top: 5rem;
   }
   .multifiltro {
       display: none;
@@ -127,6 +130,7 @@
   .contenedorFiltrosLista {
     min-width: 100%;
     margin-left: 0;
+    padding-right: 205px;
   }
 
 
